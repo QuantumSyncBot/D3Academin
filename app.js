@@ -15,5 +15,7 @@ const bars = container
   .enter()
   .append('div')
   .classed('bar', true)
+  .style('border', '1px solid black')
+  .style('float', 'left')
   .style('width', '50px')
   .style('height',  data => ( data.value * 15 ) + 'px');
